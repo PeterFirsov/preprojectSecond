@@ -1,0 +1,119 @@
+.button {
+  display: block;
+  width: 180px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #ffffff;
+  background-color: #0d648a;
+}
+
+.button:active {
+  color: #7c7c7c;
+}
+
+.button--wide {
+  width: 406px;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 16px;
+  padding-bottom: 19px;
+  border: 1px solid #00b2ff;
+  background-color: #00b2ff;
+
+  i {
+    display: none;
+  }
+}
+
+.button--sized {
+  width: 180px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #00b2ff;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  border: 1px solid #00b2ff;
+  background-color: transparent;
+}
+
+.button--sized-color {
+  width: 270px;
+  padding-top: 12px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.button--popup-wide {
+  width: 100%;
+  font-size: 14px;
+  padding-bottom: 16px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1023px) {
+  .button--wide {
+    width: 378px;
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 16px;
+    padding-bottom: 19px;
+    border: 1px solid #00b2ff;
+    background-color: #00b2ff;
+  }
+
+  .button--sized {
+    margin-left: 3px;
+  }
+
+  .button--sized-color {
+    width: 280px;
+    padding-top: 14px;
+    padding-bottom: 17px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .button--wide {
+    width: 100%;
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 16px;
+    padding-bottom: 19px;
+    border: 1px solid #00b2ff;
+    background-color: #00b2ff;
+
+    i {
+      display: inline;
+      font-style: normal;
+    }
+
+    span {
+      display: none;
+    }
+  }
+
+  .button--sized-color {
+    width: 100%;
+  }
+}
