@@ -55,7 +55,7 @@ body {
   min-height: 658px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 93px;
+  margin-bottom: 0;
   padding: 0 30px;
   padding-top: 30px;
   -webkit-box-sizing: border-box;
@@ -119,7 +119,7 @@ body {
     margin-bottom: 56px;
     font-family: "Bebas Neue", "Arial", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 109px;
     line-height: 109px;
     letter-spacing: 0.03em;
@@ -163,7 +163,6 @@ body {
     min-height: 554px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 93px;
     padding: 0 45px;
     padding-top: 40px;
     -webkit-box-sizing: border-box;
@@ -218,7 +217,7 @@ body {
       margin-bottom: 40px;
       font-family: "Bebas Neue", "Arial", sans-serif;
       font-style: normal;
-      font-weight: normal;
+      font-weight: bold;
       font-size: 86px;
       line-height: 86px;
       letter-spacing: 0.03em;
@@ -246,7 +245,6 @@ body {
     min-height: 491px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 93px;
     padding: 0 15px;
     padding-top: 20px;
     -webkit-box-sizing: border-box;
@@ -282,7 +280,7 @@ body {
       margin-bottom: 43px;
       font-family: "Bebas Neue", "Arial", sans-serif;
       font-style: normal;
-      font-weight: normal;
+      font-weight: bold;
       font-size: 78px;
       line-height: 78px;
       letter-spacing: 0.03em;
@@ -364,3 +362,220 @@ body {
 @media (max-width: 767px) {
   .button--header {
     width: 100%; } }
+
+.main {
+  background-color: #ffffff; }
+
+.gym {
+  width: auto; }
+
+.gym__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  max-width: 1220px;
+  min-height: 756px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 30px;
+  padding-top: 120px;
+  padding-bottom: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.gym__text {
+  max-width: 355px;
+  min-height: 314px;
+  padding-left: 60px;
+  padding-top: 47px;
+  margin-right: 30px; }
+  .gym__text h2 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    font-family: "Bebas Neue", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+    color: #102654; }
+  .gym__text span {
+    display: block;
+    margin-bottom: 40px;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #102654; }
+  .gym__text p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.009em;
+    color: #102654; }
+
+.gym__image {
+  max-width: 660px;
+  max-height: 401px;
+  overflow: hidden; }
+  .gym__image img {
+    width: 100%;
+    height: auto; }
+
+.gym__video {
+  position: absolute;
+  bottom: 120px;
+  left: calc(50% - 143px);
+  width: 364px;
+  height: 228px; }
+
+@media (max-width: 1160px) {
+  .gym__video {
+    left: calc(65% - 143px); } }
+
+.gym__video-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+  .gym__video-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 54, 122, 0.5); }
+  .gym__video-link:hover::before {
+    background-color: rgba(20, 54, 122, 0); }
+
+.gym__button {
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px); }
+
+@media (max-width: 1023px) {
+  .gym__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    position: relative;
+    max-width: 1023px;
+    min-height: 854px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 30px;
+    padding-top: 100px;
+    padding-bottom: 30px; }
+  .gym__text {
+    max-width: none;
+    min-height: 180px;
+    padding-left: 0;
+    padding-top: 0;
+    padding: 0 100px;
+    margin-right: 0;
+    margin-bottom: 32px;
+    text-align: center; }
+    .gym__text h2 {
+      margin-bottom: 8px;
+      font-size: 42px;
+      line-height: 42px; }
+    .gym__text span {
+      margin-bottom: 35px; }
+    .gym__text p {
+      max-width: 1023px;
+      margin-bottom: 10px; }
+    .gym__text p + p {
+      display: none; }
+  .gym__image {
+    max-width: 100%;
+    max-height: 345px;
+    margin-bottom: 30px; }
+  .gym__video {
+    position: absolute;
+    bottom: 100px;
+    left: calc(50% - 133px);
+    width: 266px;
+    height: 167px; }
+  .gym__video-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0; }
+    .gym__video-link img {
+      width: 100%;
+      height: auto; }
+  .gym__button {
+    position: absolute;
+    top: calc(50% - 38px);
+    left: calc(50% - 38px);
+    width: 73px;
+    height: 73px; } }
+
+@media (max-width: 767px) {
+  .gym__wrapper {
+    position: relative;
+    max-width: 767px;
+    min-height: 925px;
+    padding: 0;
+    padding-top: 70px;
+    padding-bottom: 30px; }
+  .gym__text {
+    max-width: none;
+    min-height: 241px;
+    padding: 0 15px;
+    margin-bottom: 22px;
+    text-align: left; }
+    .gym__text h2 {
+      margin-bottom: 6px;
+      font-size: 32px;
+      line-height: 32px; }
+    .gym__text span {
+      margin-bottom: 24px; }
+    .gym__text p {
+      max-width: 100%;
+      padding-right: 30px;
+      margin-bottom: 10px; }
+  .gym__image {
+    width: 100%;
+    min-height: 313px;
+    margin-bottom: 35px; }
+    .gym__image img {
+      min-height: 313px; }
+  .gym__video {
+    position: relative;
+    bottom: unset;
+    left: unset;
+    width: 100%;
+    height: 167px; }
+  .gym__video-link {
+    width: 100%;
+    height: 167px;
+    margin: 0;
+    padding: 0; }
+    .gym__video-link img {
+      width: 100%;
+      height: 167px; } }
