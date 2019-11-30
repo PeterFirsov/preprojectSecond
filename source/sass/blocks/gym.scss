@@ -92,6 +92,7 @@
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 
   &::before {
     content: "";
@@ -131,7 +132,7 @@
   }
 
   .gym__text {
-    max-width: none;
+    max-width: 100%;
     min-height: 180px;
     padding-left: 0;
     padding-top: 0;
@@ -151,7 +152,7 @@
     }
 
     p {
-      max-width: 1023px;
+      max-width: none;
       margin-bottom: 10px;
     }
 
@@ -161,7 +162,7 @@
   }
 
   .gym__image {
-    max-width: 100%;
+    max-width: 678px;
     max-height: 345px;
     margin-bottom: 30px;
   }
@@ -207,11 +208,12 @@
   }
 
   .gym__text {
-    max-width: none;
+    max-width: 100%;
     min-height: 241px;
     padding: 0 15px;
     margin-bottom: 22px;
     text-align: left;
+    box-sizing: border-box;
 
     h2 {
       margin-bottom: 6px;
@@ -242,21 +244,22 @@
 
   .gym__video {
     position: relative;
-    bottom: unset;
-    left: unset;
+    bottom: 0;
+    left: 0;
     width: 100%;
     height: 167px;
   }
 
   .gym__video-link {
-    width: 100%;
+    width: auto;
+    max-width: 767px;
     height: 167px;
     margin: 0;
     padding: 0;
 
     img {
       width: 100%;
-      height: 167px;
+      height: auto;
     }
   }
 }
