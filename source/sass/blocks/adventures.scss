@@ -1,0 +1,588 @@
+.adventures {
+  width: auto;
+  min-height: 664px;
+  background: #f8f9fc;
+  padding-top: 118px;
+  box-sizing: border-box;
+
+  h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 65px;
+    font-family: "Bebas Neue", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+    color: #102654;
+  }
+}
+
+.adventures__wrapper {
+  position: relative;
+  max-width: 1040px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.adventures__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.adventures__item {
+  position: relative;
+  max-width: 340px;
+  min-height: 161px;
+  flex-shrink: 1;
+  box-sizing: border-box;
+
+  &::after {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #2e35ac;
+  }
+
+  h3 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 33px;
+    color: #102654;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #102654;
+    letter-spacing: -0.01em;
+  }
+}
+
+.adventures__item--square {
+  padding-left: 164px;
+  margin-right: 245px;
+  margin-bottom: 75px;
+  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 26px;
+    top: 3px;
+    width: 108px;
+    height: 54px;
+    background-image: url("../img/900.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "кв/м";
+    position: absolute;
+    left: 26px;
+    top: 62px;
+  }
+}
+
+.adventures__item--parking {
+  padding-left: 103px;
+  padding-right: 4px;
+  margin-bottom: 75px;
+  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 72px;
+    height: 54px;
+    background-image: url("../img/70.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "машин";
+    position: absolute;
+    left: 0;
+    top: 62px;
+  }
+}
+
+.adventures__item--comfort {
+  padding-left: 157px;
+  margin-right: 245px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 2px;
+    width: 108px;
+    height: 54px;
+    background-image: url("../img/350.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "мест";
+    position: absolute;
+    left: 20px;
+    top: 62px;
+  }
+}
+
+.adventures__item--exp {
+  padding-left: 103px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 70px;
+    height: 54px;
+    background-image: url("../img/5.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "лет";
+    position: absolute;
+    left: 0;
+    top: 62px;
+  }
+}
+
+.adventures__wrapper-middle {
+  width: 240px;
+  min-height: 307px;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 130px 30px 30px 30px;
+  text-align: center;
+  background-color: #1c3374;
+  box-sizing: border-box;
+
+  h3 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 33px;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 39px;
+    color: #ffffff;
+
+    &::before {
+      content: attr(data-limit);
+      position: absolute;
+      top: -95px;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      font-family: "Roboto Condensed", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 74px;
+      line-height: 111px;
+      color: #ffffff;
+    }
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 1023px) {
+  .adventures {
+    width: auto;
+    min-height: 755px;
+    background: #f8f9fc;
+    padding-top: 100px;
+
+    h2 {
+      margin-bottom: 40px;
+      font-size: 42px;
+      line-height: 42px;
+    }
+  }
+
+  .adventures__wrapper {
+    position: relative;
+    max-width: 100%;
+    padding: 0 30px;
+    margin: 0;
+  }
+
+  .adventures__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .adventures__item {
+    position: relative;
+    max-width: 340px;
+    min-height: 161px;
+    flex-shrink: 1;
+    box-sizing: border-box;
+
+    h3 {
+      margin-bottom: 3px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  .adventures__item--square {
+    padding-left: 134px;
+    padding-right: 20px;
+    margin-right: 0;
+    margin-bottom: 241px;
+    border-bottom: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 15px;
+      top: 8px;
+      width: 89px;
+      height: 44px;
+      background-size: contain;
+    }
+
+    &::after {
+      content: "кв/м";
+      position: absolute;
+      left: 15px;
+      top: 54px;
+    }
+  }
+
+  .adventures__item--parking {
+    padding-left: 90px;
+    padding-right: 20px;
+    margin-bottom: 241px;
+    border-bottom: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -5px;
+      top: 8px;
+      width: 72px;
+      height: 44px;
+      background-size: contain;
+    }
+
+    &::after {
+      content: "машин";
+      position: absolute;
+      left: 0;
+      top: 54px;
+    }
+  }
+
+  .adventures__item--comfort {
+    padding-left: 135px;
+    margin-right: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: 7px;
+      width: 108px;
+      height: 44px;
+      background-size: contain;
+    }
+
+    &::after {
+      content: "мест";
+      position: absolute;
+      left: 15px;
+      top: 54px;
+    }
+  }
+
+  .adventures__item--exp {
+    padding-left: 90px;
+    padding-right: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -5px;
+      top: 7px;
+      width: 70px;
+      height: 44px;
+      background-size: contain;
+    }
+
+    &::after {
+      content: "лет";
+      position: absolute;
+      left: 0;
+      top: 54px;
+    }
+  }
+
+  .adventures__wrapper-middle {
+    width: 442px;
+    min-height: 239px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -67%);
+    padding: 106px 130px 30px 130px;
+    text-align: center;
+    background-color: #1c3374;
+    box-sizing: border-box;
+
+    h3 {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 15px;
+      font-family: "Roboto Condensed", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 33px;
+      color: #ffffff;
+
+      &::before {
+        content: attr(data-limit);
+        position: absolute;
+        top: -93px;
+        left: -2px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .adventures {
+    width: auto;
+    min-height: 1231px;
+    background: #f8f9fc;
+    padding-top: 70px;
+
+    h2 {
+      margin-bottom: 40px;
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+
+  .adventures__wrapper {
+    position: relative;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .adventures__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .adventures__item {
+    position: relative;
+    max-width: 100%;
+    min-height: 142px;
+    padding: 0 46px;
+    flex-shrink: 1;
+    box-sizing: border-box;
+    text-align: center;
+
+    h3 {
+      margin-bottom: 1px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  .adventures__item--square {
+    padding: 0 70px;
+    padding-top: 85px;
+    margin-right: 0;
+    margin-bottom: 31px;
+    border-bottom: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 8px;
+      width: 89px;
+      height: 44px;
+      transform: translateX(-50%);
+      background-size: contain;
+    }
+
+    &::after {
+      content: "кв/м";
+      position: absolute;
+      left: 50%;
+      top: 56px;
+      transform: translateX(-50%);
+    }
+  }
+
+  .adventures__item--parking {
+    padding: 0 46px;
+    padding-top: 85px;
+    margin-bottom: 320px;
+    border-bottom: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 10px;
+      width: 72px;
+      height: 44px;
+      transform: translateX(-50%);
+      background-size: contain;
+    }
+
+    &::after {
+      content: "машин";
+      position: absolute;
+      left: 50%;
+      top: 56px;
+      transform: translateX(-50%);
+    }
+  }
+
+  .adventures__item--comfort {
+    padding: 0 46px;
+    padding-top: 85px;
+    margin-right: 0;
+    margin-bottom: 33px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 10px;
+      width: 108px;
+      height: 44px;
+      transform: translateX(-50%);
+      background-size: contain;
+    }
+
+    &::after {
+      content: "мест";
+      position: absolute;
+      left: 50%;
+      top: 57px;
+      transform: translateX(-50%);
+    }
+  }
+
+  .adventures__item--exp {
+    padding: 0 46px;
+    padding-top: 85px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 10px;
+      width: 70px;
+      height: 44px;
+      transform: translateX(-50%);
+      background-size: contain;
+    }
+
+    &::after {
+      content: "лет";
+      position: absolute;
+      left: 50%;
+      top: 56px;
+      transform: translateX(-50%);
+    }
+  }
+
+  .adventures__wrapper-middle {
+    width: 100%;
+    min-height: 239px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -48%);
+    padding: 106px 65px 29px 65px;
+    text-align: center;
+    background-color: #1c3374;
+    box-sizing: border-box;
+
+    h3 {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 9px;
+      font-family: "Roboto Condensed", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 33px;
+      color: #ffffff;
+
+      &::before {
+        content: attr(data-limit);
+        position: absolute;
+        top: -89px;
+        left: -2px;
+      }
+    }
+  }
+}

@@ -8,7 +8,7 @@
   min-height: 500px;
   padding: 0 30px;
   margin-top: 120px;
-  margin-bottom: 120px;
+  margin-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
@@ -128,7 +128,7 @@
   min-height: 500px;
   background-color: #010245;
   background-image: url("../img/desktop-xfit@1x.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -136,14 +136,14 @@
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .promotion__image {
     background-image: url("../img/desktop-xfit@2x.jpg");
-    background-size: 660px auto;
+    background-size: cover;
   }
 }
 
 @media (max-width: 1023px) {
   .promotion__wrapper {
     display: flex;
-    max-width: 1023px;
+    max-width: 768px;
     min-height: 292px;
     padding: 0 45px;
     margin-top: 100px;
@@ -268,7 +268,7 @@
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .promotion__image {
       background-image: url("../img/tablet-xfit@2x.jpg");
-      background-size: 386px auto;
+      background-size: cover;
     }
   }
 }
@@ -277,7 +277,7 @@
   .promotion__wrapper {
     display: flex;
     flex-direction: column;
-    max-width: 767px;
+    max-width: 320px;
     min-height: 584px;
     padding: 0 15px;
     margin-top: 70px;
@@ -408,7 +408,7 @@
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .promotion__image {
       background-image: url("../img/mobile-xfit@2x.jpg");
-      background-size: 290px auto;
+      background-size: cover;
     }
   }
 }

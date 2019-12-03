@@ -2,24 +2,12 @@
   width: auto;
   position: relative;
   background: #f8f9fc;
-
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: 0;
-    right: 0;
-    bottom: -140px;
-    width: 287px;
-    height: 484px;
-    background-image: url("../img/desktop-weight@1x.png");
-    background-repeat: no-repeat;
-  }
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .subscription::after {
+  .subscription__wrapper::after {
     background-image: url("../img/desktop-weight@2x.png");
-    background-size: 287px auto;
+    background-size: 470px auto;
   }
 }
 
@@ -35,6 +23,21 @@
   margin-right: auto;
   text-align: center;
   box-sizing: border-box;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: -257px;
+    bottom: -150px;
+    width: 470px;
+    height: 494px;
+    background-image: url("../img/desktop-weight@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
 
   h2 {
     margin: 0;
@@ -132,13 +135,6 @@
     text-align: center;
     box-sizing: border-box;
     background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
-    cursor: pointer;
-
-    &:hover {
-      z-index: 2;
-      transition: 0.5s;
-      transform: scale(1.2);
-    }
 
     &:hover .subscription__inner {
       transition: 0.5s;
@@ -204,7 +200,7 @@
           z-index: -1;
           bottom: 25px;
           left: 50%;
-          margin-left: -101px;
+          transform: translateX(-50%);
           opacity: 0.48;
         }
       }
@@ -217,19 +213,9 @@
 }
 
 @media (max-width: 1023px) {
-  .subscription {
-    &::after {
-      right: 0;
-      bottom: -125px;
-      width: 347px;
-      height: 444px;
-      background-image: url("../img/tablet-weight@1x.png");
-      background-repeat: no-repeat;
-    }
-  }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .subscription::after {
+    .subscription__wrapper::after {
       background-image: url("../img/tablet-weight@2x.png");
       background-size: 347px auto;
     }
@@ -245,6 +231,15 @@
     margin-right: auto;
     text-align: center;
     box-sizing: border-box;
+
+    &::after {
+      right: 0;
+      bottom: -125px;
+      width: 347px;
+      height: 444px;
+      background-image: url("../img/tablet-weight@1x.png");
+      background-repeat: no-repeat;
+    }
 
     h2 {
       margin-bottom: 30px;
@@ -308,25 +303,6 @@
       text-align: center;
       box-sizing: border-box;
       background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
-      cursor: pointer;
-
-      &:hover {
-        z-index: 2;
-        transition: 0.5s;
-        transform: scale(1.1);
-      }
-
-      &:hover .subscription__inner {
-        transition: 0.5s;
-        background-clip: padding-box;
-      }
-
-      &:hover .button--gradient {
-        transition: 0.5s;
-        background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
-        border: none;
-        color: #ffffff;
-      }
 
       .subscription__inner {
         width: 100%;
@@ -371,18 +347,6 @@
           font-size: 60px;
           line-height: 90px;
           color: #103AAE;
-
-          &::before {
-            content: attr(data-price);
-            position: absolute;
-            font-size: 100px;
-            color: #e8e8e8;
-            z-index: -1;
-            bottom: 25px;
-            left: 50%;
-            margin-left: -101px;
-            opacity: 0.48;
-          }
         }
       }
     }
@@ -394,10 +358,6 @@
 }
 
 @media (max-width: 767px) {
-  .subscription::after {
-    display: none;
-  }
-
   .subscription__wrapper {
     max-width: 767px;
     min-height: 1487px;
@@ -408,6 +368,10 @@
     margin-right: auto;
     text-align: center;
     box-sizing: border-box;
+
+    &::after {
+      display: none;
+    }
 
     h2 {
       margin-bottom: 20px;
@@ -449,25 +413,6 @@
       text-align: center;
       box-sizing: border-box;
       background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
-      cursor: pointer;
-
-      &:hover {
-        z-index: 2;
-        transition: 0.5s;
-        transform: scale(1.05);
-      }
-
-      &:hover .subscription__inner {
-        transition: 0.5s;
-        background-clip: padding-box;
-      }
-
-      &:hover .button--gradient {
-        transition: 0.5s;
-        background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
-        border: none;
-        color: #ffffff;
-      }
 
       .subscription__inner {
         width: 100%;
@@ -526,7 +471,6 @@
             z-index: -1;
             bottom: 20px;
             left: 50%;
-            margin-left: -81px;
             opacity: 0.48;
           }
         }

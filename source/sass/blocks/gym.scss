@@ -162,7 +162,8 @@
   }
 
   .gym__image {
-    max-width: 678px;
+    width: 678px;
+    max-width: none;
     max-height: 345px;
     margin-bottom: 30px;
   }
@@ -234,11 +235,12 @@
 
   .gym__image {
     width: 100%;
-    min-height: 313px;
+    height: 313px;
     margin-bottom: 35px;
 
     img {
-      min-height: 313px;
+      width: 660px;
+      height: auto;
     }
   }
 
