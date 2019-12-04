@@ -1,30 +1,24 @@
-.logo {
-  margin: 0;
-  padding: 0;
-  font-family: "Bebas Neue", "Arial", sans-serif;
-  font-size: 26px;
-  line-height: 26px;
-  letter-spacing: 0.02em;
-  font-style: normal;
-  font-weight: normal;
-  color: #ffffff;
-  text-decoration: none;
-
-  &:hover {
-    opacity: 0.5;
-  }
+.logo:hover {
+  transition: 0.3s;
+  opacity: 0.5;
 }
 
+
 @media (max-width: 1023px) {
-  .logo {
-    font-size: 24px;
-    line-height: 24px;
+  .logo--footer svg {
+    width: 82px;
+    height: 20px;
   }
 }
 
 @media (max-width: 767px) {
-  .logo {
-    font-size: 20px;
-    line-height: 20px;
+  .logo svg {
+    width: 68px;
+    height: 17px;
+  }
+
+  .logo--footer svg {
+    width: 68px;
+    height: 17px;
   }
 }

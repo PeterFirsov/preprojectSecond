@@ -136,9 +136,15 @@
     box-sizing: border-box;
     background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
 
-    &:hover .subscription__inner {
+    &:hover .subscription__inner::after {
       transition: 0.5s;
-      background-clip: padding-box;
+      border-style: solid;
+      border-width: 7px;
+      -moz-border-image: linear-gradient(to right bottom, #d10a43 0%, #02359e 100%);
+      -webkit-border-image: linear-gradient(to right bottom, #d10a43 0%, #02359e 100%);
+      -o-border-image: linear-gradient(to right bottom, #d10a43 0%, #02359e 100%);
+      border-image: linear-gradient(to right bottom, #d10a43 0%, #02359e 100%);
+      border-image-slice: 1;
     }
 
     &:hover .button--gradient {
@@ -149,13 +155,24 @@
     }
 
     .subscription__inner {
+      position: relative;
       width: 100%;
       height: 100%;
-      padding-top: 50px;
-      padding-bottom: 20px;
+      padding: 0 7px;
+      padding-top: 57px;
+      padding-bottom: 27px;
       background: #ffffff;
       box-sizing: border-box;
-      border: 7px solid transparent;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+      }
 
       h3 {
         margin: 0;
@@ -178,7 +195,7 @@
         font-size: 16px;
         line-height: 24px;
         color: #102654;
-        }
+      }
 
       b {
         display: block;
@@ -190,7 +207,7 @@
         font-weight: bold;
         font-size: 60px;
         line-height: 90px;
-        color: #103AAE;
+        color: #103aae;
 
         &::before {
           content: attr(data-price);
@@ -213,7 +230,6 @@
 }
 
 @media (max-width: 1023px) {
-
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .subscription__wrapper::after {
       background-image: url("../img/tablet-weight@2x.png");
@@ -308,10 +324,9 @@
         width: 100%;
         height: auto;
         min-height: 448px;
-        padding-top: 50px;
+        padding-top: 57px;
         background: #ffffff;
         box-sizing: border-box;
-        border: 7px solid transparent;
 
         h3 {
           margin: 0;
@@ -334,7 +349,7 @@
           font-size: 16px;
           line-height: 24px;
           color: #102654;
-          }
+        }
 
         b {
           display: block;
@@ -346,7 +361,7 @@
           font-weight: bold;
           font-size: 60px;
           line-height: 90px;
-          color: #103AAE;
+          color: #103aae;
         }
       }
     }
@@ -418,10 +433,9 @@
         width: 100%;
         height: auto;
         min-height: 384px;
-        padding-top: 42px;
+        padding-top: 49px;
         background: #ffffff;
         box-sizing: border-box;
-        border: 7px solid transparent;
 
         h3 {
           margin: 0;
@@ -444,7 +458,7 @@
           font-size: 16px;
           line-height: 24px;
           color: #102654;
-          }
+        }
 
         b {
           display: block;
@@ -456,7 +470,7 @@
           font-weight: bold;
           font-size: 48px;
           line-height: 72px;
-          color: #103AAE;
+          color: #103aae;
 
           svg {
             width: 24px;

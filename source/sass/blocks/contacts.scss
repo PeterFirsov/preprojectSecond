@@ -1,0 +1,158 @@
+.contacts {
+  width: 100%;
+  max-width: 683px;
+  padding: 70px 159px 44px 120px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 42px;
+    font-family: "Bebas Neue", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+    color: #102654;
+  }
+}
+
+.contacts__wrapper {
+  display: flex;
+
+  .contacts__container--first {
+    position: relative;
+    flex-basis: 235px;
+    flex-shrink: 1;
+    padding-right: 5px;
+    margin-right: 15px;
+    box-sizing: border-box;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 80%;
+      right: 0;
+      top: 0;
+      background-color: #74819c;
+    }
+  }
+
+  .contacts__container--second {
+    margin-left: auto;
+    flex-basis: 110px;
+    box-sizing: border-box;
+  }
+
+  b,
+  p {
+    margin: 0;
+    padding: 0;
+    padding-left: 4px;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #102654;
+  }
+
+  b {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 2px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #102654;
+
+    &:hover {
+      transition: 0.3s;
+      opacity: 0.5;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .contacts {
+    width: 100%;
+    max-width: none;
+    padding: 69px 159px 43px 133px;
+
+    h2 {
+      margin-bottom: 33px;
+      font-size: 42px;
+      line-height: 42px;
+    }
+  }
+
+  .contacts__wrapper {
+    .contacts__container--first {
+      flex-basis: 266px;
+      padding-right: 5px;
+      margin-right: 15px;
+
+      &::after {
+        width: 1px;
+        height: 80%;
+        right: -1px;
+        top: 7px;
+      }
+    }
+
+    .contacts__container--second {
+      margin-left: auto;
+      flex-basis: 162px;
+      box-sizing: border-box;
+    }
+
+    b,
+    p {
+      padding-left: 0;
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    b {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .contacts {
+    padding: 69px 15px 44px 15px;
+
+    h2 {
+      margin-bottom: 35px;
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+
+  .contacts__wrapper {
+    display: block;
+
+    .contacts__container--first {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
