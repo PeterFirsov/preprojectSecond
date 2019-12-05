@@ -140,9 +140,6 @@
       transition: 0.5s;
       border-style: solid;
       border-width: 7px;
-      -moz-border-image: linear-gradient(to right bottom, #d10a43 0%, #02359e 100%);
-      -webkit-border-image: linear-gradient(to right bottom, #d10a43 0%, #02359e 100%);
-      -o-border-image: linear-gradient(to right bottom, #d10a43 0%, #02359e 100%);
       border-image: linear-gradient(to right bottom, #d10a43 0%, #02359e 100%);
       border-image-slice: 1;
     }

@@ -2,6 +2,7 @@
 
 import smoothscroll from 'smoothscroll-polyfill';
 import Swiper from "swiper";
+import IMask from "imask";
 
 smoothscroll.polyfill();
 
@@ -66,6 +67,13 @@ window.addEventListener(`load`, () => {
           spaceBetween: 80
         }
       }
+    });
+  }
+
+  var phoneMask = document.querySelector('.free__form-tel');
+  if (phoneMask) {
+    var validatePhone = new IMask(phoneMask, {
+      mask: '+{7}(000)000-00-00'
     });
   }
 });

@@ -75,6 +75,15 @@
     color: #102654;
     letter-spacing: -0.01em;
   }
+
+  span {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #102654;
+  }
 }
 
 .adventures__item--square {
@@ -95,8 +104,7 @@
     background-repeat: no-repeat;
   }
 
-  &::after {
-    content: "кв/м";
+  span {
     position: absolute;
     left: 26px;
     top: 62px;
@@ -121,8 +129,7 @@
     background-repeat: no-repeat;
   }
 
-  &::after {
-    content: "машин";
+  span {
     position: absolute;
     left: 0;
     top: 62px;
@@ -145,8 +152,7 @@
     background-repeat: no-repeat;
   }
 
-  &::after {
-    content: "мест";
+  span {
     position: absolute;
     left: 20px;
     top: 62px;
@@ -168,8 +174,7 @@
     background-repeat: no-repeat;
   }
 
-  &::after {
-    content: "лет";
+  span {
     position: absolute;
     left: 0;
     top: 62px;
@@ -291,11 +296,10 @@
       background-size: contain;
     }
 
-    &::after {
-      content: "кв/м";
+    span {
       position: absolute;
-      left: 15px;
-      top: 54px;
+      left: 14px;
+      top: 55px;
     }
   }
 
@@ -315,11 +319,10 @@
       background-size: contain;
     }
 
-    &::after {
-      content: "машин";
+    span {
       position: absolute;
       left: 0;
-      top: 54px;
+      top: 56px;
     }
   }
 
@@ -337,11 +340,10 @@
       background-size: contain;
     }
 
-    &::after {
-      content: "мест";
+    span {
       position: absolute;
       left: 15px;
-      top: 54px;
+      top: 56px;
     }
   }
 
@@ -359,11 +361,10 @@
       background-size: contain;
     }
 
-    &::after {
-      content: "лет";
+    span {
       position: absolute;
       left: 0;
-      top: 54px;
+      top: 56px;
     }
   }
 
@@ -468,9 +469,7 @@
       background-size: contain;
     }
 
-    &::after {
-      content: "кв/м";
-      position: absolute;
+    span {
       left: 50%;
       top: 56px;
       transform: translateX(-50%);
@@ -494,9 +493,7 @@
       background-size: contain;
     }
 
-    &::after {
-      content: "машин";
-      position: absolute;
+    span {
       left: 50%;
       top: 56px;
       transform: translateX(-50%);
@@ -520,9 +517,7 @@
       background-size: contain;
     }
 
-    &::after {
-      content: "мест";
-      position: absolute;
+    span {
       left: 50%;
       top: 57px;
       transform: translateX(-50%);
@@ -544,9 +539,7 @@
       background-size: contain;
     }
 
-    &::after {
-      content: "лет";
-      position: absolute;
+    span {
       left: 50%;
       top: 56px;
       transform: translateX(-50%);

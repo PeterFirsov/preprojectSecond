@@ -63,12 +63,18 @@
 
 .gym__image {
   max-width: 660px;
+  width: 100%;
   max-height: 401px;
   overflow: hidden;
+  background-image: url("../img/desktop-jum@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  img {
-    width: 100%;
-    height: auto;
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .gym__image {
+    background-image: url("../img/desktop-jum@2x.jpg");
   }
 }
 
@@ -78,6 +84,11 @@
   left: calc(50% - 143px);
   width: 364px;
   height: 228px;
+  overflow: hidden;
+  background-image: url("../img/desktop-video@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &::before {
     content: "";
@@ -87,6 +98,12 @@
     width: 100%;
     height: 100%;
     background-color: rgba(20, 54, 122, 0.5);
+  }
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .gym__video {
+    background-image: url("../img/desktop-video@2x.jpg");
   }
 }
 
@@ -158,10 +175,21 @@
   }
 
   .gym__image {
-    width: 678px;
-    max-width: none;
-    max-height: 345px;
+    width: 100%;
+    max-width: 678px;
+    max-height: none;
+    height: 345px;
     margin-bottom: 30px;
+    background-image: url("../img/tablet-jum@1x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .gym__image {
+      background-image: url("../img/tablet-jum@2x.jpg");
+    }
   }
 
   .gym__video {
@@ -170,11 +198,6 @@
     left: calc(50% - 133px);
     width: 266px;
     height: 167px;
-
-    img {
-      width: 100%;
-      height: auto;
-    }
   }
 
   .gym__button {
@@ -228,12 +251,18 @@
 
   .gym__image {
     width: 100%;
+    max-width: none;
     height: 313px;
     margin-bottom: 40px;
+    background-image: url("../img/mobile-jum@1x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-    img {
-      width: 100%;
-      height: 100%;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .gym__image {
+      background-image: url("../img/mobile-jum@2x.jpg");
     }
   }
 
@@ -244,10 +273,15 @@
     width: 100%;
     height: 167px;
     overflow: hidden;
+    background-image: url("../img/mobile-video@1x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-    img {
-      width: 100%;
-      height: auto;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .gym__video {
+      background-image: url("../img/mobile-video@2x.jpg");
     }
   }
 }
