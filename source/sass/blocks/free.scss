@@ -1,7 +1,7 @@
 .free {
   width: 100%;
   max-width: 683px;
-  padding: 70px 170px 44px 103px;
+  padding: 68px 170px 43px 103px;
   box-sizing: border-box;
   background-color: #102654;
 
@@ -34,6 +34,8 @@
     margin-bottom: 30px;
     background-color: transparent;
     border: none;
+    appearance: none;
+    border-radius: unset;
     border-bottom: 1px solid #ffffff;
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-style: normal;

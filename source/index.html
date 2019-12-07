@@ -85,17 +85,19 @@
       <a name="subscription"></a>
       <div class="subscription__wrapper">
         <h2>Абонементы</h2>
-        <ul class="subscription__month">
-          <li class="subscription__tab subscription__tab--activ">
-            <a href="#">1 месяц</a>
-          </li>
-          <li class="subscription__tab">
-            <a href="#">6 месяцев</a>
-          </li>
-          <li class="subscription__tab">
-            <a href="#">12 месяцев</a>
-          </li>
-        </ul>
+        <div class="subscription__overflow">
+          <ul class="subscription__month">
+            <li class="subscription__tab subscription__tab--activ">
+              <a href="#">1 месяц</a>
+            </li>
+            <li class="subscription__tab">
+              <a href="#">6 месяцев</a>
+            </li>
+            <li class="subscription__tab">
+              <a href="#">12 месяцев</a>
+            </li>
+          </ul>
+        </div>
         <ul class="subscription__list">
           <li class="subscription__item">
             <div class="subscription__inner">
@@ -402,7 +404,7 @@
       <section class="free">
         <h2>Бесплатное занятие</h2>
         <form class="free__form" action="https://echo.htmlacademy.ru" method="post">
-          <input class="free__form-name" name="name" type="text" placeholder="Имя" aria-label="Имя" required autocomplete="on" pattern="[A-Za-z]+[0-9a-zA-Z;_]{2,40}">
+          <input class="free__form-name" name="name" type="text" placeholder="Имя" aria-label="Имя" required autocomplete="on">
           <input class="free__form-tel" name="phone" type="tel" placeholder="Телефон" aria-label="Телефон" required autocomplete="on">
           <button class="free__form-button button button--form" type="submit">Отправить</button>
         </form>

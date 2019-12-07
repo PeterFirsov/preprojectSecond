@@ -53,11 +53,15 @@
   }
 }
 
+.subscription__overflow {
+  display: flex;
+}
+
 .subscription__month {
   display: flex;
   position: relative;
-  flex-wrap: wrap;
-  width: 340px;
+  justify-content: center;
+  width: auto;
   margin: 0;
   padding: 0;
   margin-left: auto;
@@ -104,7 +108,7 @@
   }
 
   .subscription__tab:nth-of-type(1n+2) {
-    margin-left: auto;
+    margin-left: 46px;
   }
 
   .subscription__tab--activ {
@@ -129,6 +133,7 @@
     display: block;
     position: relative;
     flex-basis: 280px;
+    max-width: 360px;
     flex-grow: 1;
     min-height: 448px;
     margin-bottom: 20px;
@@ -262,7 +267,6 @@
   }
 
   .subscription__month {
-    width: 332px;
     margin-bottom: 45px;
     box-sizing: border-box;
 
@@ -284,7 +288,7 @@
     }
 
     .subscription__tab:nth-of-type(1n+2) {
-      margin-left: auto;
+      margin-left: 55px;
     }
 
     .subscription__tab--activ {
@@ -309,7 +313,7 @@
       display: block;
       position: relative;
       flex-basis: 442px;
-      flex-shrink: 0;
+      max-width: none;
       flex-grow: 1;
       min-height: 448px;
       margin-bottom: 40px;
@@ -402,6 +406,10 @@
       font-size: 16px;
       line-height: 24px;
       letter-spacing: -0.009em;
+    }
+
+    .subscription__tab:nth-of-type(1n+2) {
+      margin-left: 45px;
     }
   }
 

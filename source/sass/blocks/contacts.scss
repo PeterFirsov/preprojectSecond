@@ -1,7 +1,7 @@
 .contacts {
   width: 100%;
   max-width: 683px;
-  padding: 70px 159px 44px 120px;
+  padding: 68px 159px 43px 120px;
   box-sizing: border-box;
   background-color: #ffffff;
 
@@ -85,6 +85,7 @@
 
 @media (max-width: 1023px) {
   .contacts {
+    position: relative;
     width: 100%;
     max-width: none;
     padding: 69px 159px 43px 133px;
@@ -97,16 +98,26 @@
   }
 
   .contacts__wrapper {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 79%;
+      right: 44%;
+      top: 8px;
+      background-color: #74819c;
+    }
+
     .contacts__container--first {
       flex-basis: 266px;
+      flex-grow: 1;
       padding-right: 5px;
       margin-right: 15px;
 
       &::after {
-        width: 1px;
-        height: 80%;
-        right: -1px;
-        top: 7px;
+        display: none;
       }
     }
 
@@ -149,10 +160,8 @@
   .contacts__wrapper {
     display: block;
 
-    .contacts__container--first {
-      &::after {
-        display: none;
-      }
+    &::after {
+      display: none;
     }
   }
 }

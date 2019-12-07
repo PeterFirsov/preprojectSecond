@@ -80,7 +80,7 @@
 
 .gym__video {
   position: absolute;
-  bottom: 120px;
+  top: 408px;
   left: calc(50% - 143px);
   width: 364px;
   height: 228px;
@@ -194,6 +194,7 @@
 
   .gym__video {
     position: absolute;
+    top: auto;
     bottom: 100px;
     left: calc(50% - 133px);
     width: 266px;

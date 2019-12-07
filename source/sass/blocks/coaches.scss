@@ -58,6 +58,12 @@
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
+    outline: none;
+
+    &:hover {
+      transition: 0.3s;
+      opacity: 0.6;
+    }
   }
 
   .coaches__button--next {
