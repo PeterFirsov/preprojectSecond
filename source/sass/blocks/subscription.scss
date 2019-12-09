@@ -227,8 +227,9 @@
   }
 }
 
-.subscription__item--margin {
+.subscription__item:nth-child(3n+2) {
   margin: 0 40px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 1023px) {
@@ -368,8 +369,9 @@
     }
   }
 
-  .subscription__item--margin {
+  .subscription__item:nth-child(3n+2) {
     margin: 0;
+    margin-bottom: 40px;
   }
 }
 
@@ -497,7 +499,7 @@
     }
   }
 
-  .subscription__item--margin {
-    margin: 0;
+  .subscription__item:nth-child(3n+2) {
+    margin-bottom: 35px;
   }
 }
